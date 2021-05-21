@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // This is the answer to question 1
+
+        function convertFahrToCelsius(temp) {
+        if(typeof(temp) === "number" || typeof(temp) === "string"){
+            return ((Number(temp) - 32) * 5/9).toFixed(4);
+        } else {
+            return `${temp} is not a valid number but a/an ${typeof(temp)}`;
+        }
+        }
+
+        console.log(convertFahrToCelsius(0));
+        console.log(convertFahrToCelsius("0") );
+        console.log(convertFahrToCelsius([1,2,3]));
+        console.log(convertFahrToCelsius({temp: 0}));
+
+
+        // This is what the output in the console will be.
+
+        // - convertFahrToCelsius(0) should return `-17.7778`
+        // - convertFahrToCelsius("0") should return `-17.7778`
+        // - convertFahrToCelsius([1,2,3]) should return `[1,2,3] is not a valid number but a/an array.`
+        // - convertFahrToCelsius({temp: 0}) should return `{temp: 0} is not a valid number but a/an object.`
+
+
+        function checkYuGiOh (n) {
+            return 
+        }
+        n = 15;
+        var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+        
+
+    </script>
+
+</body>
+</html>
